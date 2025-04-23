@@ -77,7 +77,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Example: Sales Over Time
+Example: Sales Over Time
 plt.figure(figsize=(10, 6))
 df.groupby(df['InvoiceDate'].dt.to_period('M'))['OrderValue'].sum().plot(kind='line')
 plt.title('Sales Over Time')
